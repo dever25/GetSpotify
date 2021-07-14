@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C4AA00EE274A10EE0079B500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA00ED274A10EE0079B500 /* AppDelegate.swift */; };
-		C4AA00F0274A10EE0079B500 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA00EF274A10EE0079B500 /* SceneDelegate.swift */; };
-		C4AA00F2274A10EE0079B500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA00F1274A10EE0079B500 /* ViewController.swift */; };
-		C4AA00F5274A10EE0079B500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4AA00F3274A10EE0079B500 /* Main.storyboard */; };
 		C4AA00F7274A10EE0079B500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AA00F6274A10EE0079B500 /* Assets.xcassets */; };
 		C4AA00FA274A10EE0079B500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4AA00F8274A10EE0079B500 /* LaunchScreen.storyboard */; };
+		C4AA0109274A10EE0079B500 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA0103274A10EE0079B500 /* LogInViewModel.swift */; };
+		C4AA010B274A10EE0079B500 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4AA0107274A10EE0079B500 /* LoginViewController.xib */; };
+		C4AA010C274A10EE0079B500 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AA0108274A10EE0079B500 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C4AA00EA274A10EE0079B500 /* SpotifyAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AA00ED274A10EE0079B500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C4AA00EF274A10EE0079B500 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C4AA00F1274A10EE0079B500 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C4AA00F4274A10EE0079B500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4AA00F6274A10EE0079B500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4AA00F9274A10EE0079B500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4AA00FB274A10EE0079B500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4AA0103274A10EE0079B500 /* LogInViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
+		C4AA0107274A10EE0079B500 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		C4AA0108274A10EE0079B500 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +57,46 @@
 			isa = PBXGroup;
 			children = (
 				C4AA00ED274A10EE0079B500 /* AppDelegate.swift */,
-				C4AA00EF274A10EE0079B500 /* SceneDelegate.swift */,
-				C4AA00F1274A10EE0079B500 /* ViewController.swift */,
-				C4AA00F3274A10EE0079B500 /* Main.storyboard */,
+				C4AA0101274A10EE0079B500 /* LogInModule */,
 				C4AA00F6274A10EE0079B500 /* Assets.xcassets */,
 				C4AA00F8274A10EE0079B500 /* LaunchScreen.storyboard */,
 				C4AA00FB274A10EE0079B500 /* Info.plist */,
 			);
 			path = SpotifyAPI;
+			sourceTree = "<group>";
+		};
+		C4AA0101274A10EE0079B500 /* LogInModule */ = {
+			isa = PBXGroup;
+			children = (
+				C4AA0104274A10EE0079B500 /* Model */,
+				C4AA0106274A10EE0079B500 /* View */,
+				C4AA0102274A10EE0079B500 /* ViewModel */,
+			);
+			path = LogInModule;
+			sourceTree = "<group>";
+		};
+		C4AA0102274A10EE0079B500 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C4AA0103274A10EE0079B500 /* LogInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C4AA0104274A10EE0079B500 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4AA0106274A10EE0079B500 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4AA0107274A10EE0079B500 /* LoginViewController.xib */,
+				C4AA0108274A10EE0079B500 /* LoginViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +157,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AA010B274A10EE0079B500 /* LoginViewController.xib in Resources */,
 				C4AA00FA274A10EE0079B500 /* LaunchScreen.storyboard in Resources */,
 				C4AA00F7274A10EE0079B500 /* Assets.xcassets in Resources */,
-				C4AA00F5274A10EE0079B500 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +170,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4AA00F2274A10EE0079B500 /* ViewController.swift in Sources */,
+				C4AA010C274A10EE0079B500 /* LoginViewController.swift in Sources */,
+				C4AA0109274A10EE0079B500 /* LogInViewModel.swift in Sources */,
 				C4AA00EE274A10EE0079B500 /* AppDelegate.swift in Sources */,
-				C4AA00F0274A10EE0079B500 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C4AA00F3274A10EE0079B500 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C4AA00F4274A10EE0079B500 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C4AA00F8274A10EE0079B500 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,9 +318,10 @@
 				INFOPLIST_FILE = SpotifyAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,9 +347,10 @@
 				INFOPLIST_FILE = SpotifyAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
