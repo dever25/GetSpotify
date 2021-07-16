@@ -39,6 +39,7 @@ final class LogInViewModel: NSObject, LogInViewModelProtocol, ASWebAuthenticatio
                     // TODO: - не безопасно
                     UserDefaults.standard.set(token.accessToken, forKey: "token")
                     UserDefaults.standard.set(token.refreshToken, forKey: "refresh_token")
+                    Router.shared.presentTopArtistVC()
                 }
             }))
         }

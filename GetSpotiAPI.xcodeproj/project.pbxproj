@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		68DCF16959F419FF5DD8C16C /* Pods_GetSpotiAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AD96D44BFB4B211B2935AC /* Pods_GetSpotiAPI.framework */; };
+		C431BFF4274A5300009FAD67 /* TopArtistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431BFEB274A5300009FAD67 /* TopArtistViewModel.swift */; };
+		C431BFF5274A5300009FAD67 /* TopArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431BFED274A5300009FAD67 /* TopArtistModel.swift */; };
+		C431BFF6274A5300009FAD67 /* TopArtistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C431BFEF274A5300009FAD67 /* TopArtistViewController.xib */; };
+		C431BFF7274A5300009FAD67 /* ArtistTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431BFF1274A5300009FAD67 /* ArtistTableCell.swift */; };
+		C431BFF8274A5300009FAD67 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431BFF2274A5300009FAD67 /* TableCell.swift */; };
+		C431BFF9274A5300009FAD67 /* TopArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431BFF3274A5300009FAD67 /* TopArtistViewController.swift */; };
+		C431BFFB274A5300009FAD67 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431BFFA274A5300009FAD67 /* Router.swift */; };
+		C431BFFD274A5300009FAD67 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431BFFC274A5300009FAD67 /* Extension.swift */; };
+		C4575B8B26A1B9910004FBD9 /* UserTopArtists.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4575B8A26A1B9910004FBD9 /* UserTopArtists.swift */; };
 		C476C18B274A31D8005CD9C2 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476C18A274A31D8005CD9C2 /* Header.swift */; };
 		C476C18D274A31D8005CD9C2 /* EndingPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476C18C274A31D8005CD9C2 /* EndingPath.swift */; };
 		C476C18F274A31D8005CD9C2 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476C18E274A31D8005CD9C2 /* Parameters.swift */; };
@@ -30,6 +39,15 @@
 		08AD96D44BFB4B211B2935AC /* Pods_GetSpotiAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetSpotiAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		136A344EF8FE8639B2BB6AE2 /* Pods-GetSpotiAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetSpotiAPI.debug.xcconfig"; path = "Target Support Files/Pods-GetSpotiAPI/Pods-GetSpotiAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		BBF7D98659A38536A0E54CB5 /* Pods-GetSpotiAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetSpotiAPI.release.xcconfig"; path = "Target Support Files/Pods-GetSpotiAPI/Pods-GetSpotiAPI.release.xcconfig"; sourceTree = "<group>"; };
+		C431BFEB274A5300009FAD67 /* TopArtistViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopArtistViewModel.swift; sourceTree = "<group>"; };
+		C431BFED274A5300009FAD67 /* TopArtistModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopArtistModel.swift; sourceTree = "<group>"; };
+		C431BFEF274A5300009FAD67 /* TopArtistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopArtistViewController.xib; sourceTree = "<group>"; };
+		C431BFF1274A5300009FAD67 /* ArtistTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistTableCell.swift; sourceTree = "<group>"; };
+		C431BFF2274A5300009FAD67 /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		C431BFF3274A5300009FAD67 /* TopArtistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopArtistViewController.swift; sourceTree = "<group>"; };
+		C431BFFA274A5300009FAD67 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		C431BFFC274A5300009FAD67 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		C4575B8A26A1B9910004FBD9 /* UserTopArtists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTopArtists.swift; sourceTree = "<group>"; };
 		C476C18A274A31D8005CD9C2 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		C476C18C274A31D8005CD9C2 /* EndingPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndingPath.swift; sourceTree = "<group>"; };
 		C476C18E274A31D8005CD9C2 /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
@@ -79,6 +97,60 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C431BFE9274A5300009FAD67 /* TopArtistsModule */ = {
+			isa = PBXGroup;
+			children = (
+				C431BFEA274A5300009FAD67 /* ViewModel */,
+				C431BFEC274A5300009FAD67 /* Model */,
+				C431BFEE274A5300009FAD67 /* View */,
+			);
+			path = TopArtistsModule;
+			sourceTree = "<group>";
+		};
+		C431BFEA274A5300009FAD67 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C431BFEB274A5300009FAD67 /* TopArtistViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C431BFEC274A5300009FAD67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C431BFED274A5300009FAD67 /* TopArtistModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C431BFEE274A5300009FAD67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C431BFEF274A5300009FAD67 /* TopArtistViewController.xib */,
+				C431BFF0274A5300009FAD67 /* TableCell */,
+				C431BFF3274A5300009FAD67 /* TopArtistViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C431BFF0274A5300009FAD67 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				C431BFF1274A5300009FAD67 /* ArtistTableCell.swift */,
+				C431BFF2274A5300009FAD67 /* TableCell.swift */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		C431BFFE274A5300009FAD67 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C431BFFC274A5300009FAD67 /* Extension.swift */,
+				C431BFFA274A5300009FAD67 /* Router.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		C476C192274A31D8005CD9C2 /* ParametersRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +165,7 @@
 		C476C193274A31D8005CD9C2 /* NetworkModels */ = {
 			isa = PBXGroup;
 			children = (
+				C4575B8A26A1B9910004FBD9 /* UserTopArtists.swift */,
 				C476C194274A31D8005CD9C2 /* Tokens.swift */,
 			);
 			path = NetworkModels;
@@ -119,9 +192,11 @@
 		C4AA00EC274A10EE0079B500 /* GetSpotiAPI */ = {
 			isa = PBXGroup;
 			children = (
-				C4C9335B274A274A0085A4A2 /* Service */,
+				C431BFFE274A5300009FAD67 /* Helpers */,
+				C4C9335C274A274A0085A4A2 /* NetworkService */,
 				C4AA00ED274A10EE0079B500 /* AppDelegate.swift */,
 				C4AA0101274A10EE0079B500 /* LogInModule */,
+				C431BFE9274A5300009FAD67 /* TopArtistsModule */,
 				C4AA00F6274A10EE0079B500 /* Assets.xcassets */,
 				C4AA00F8274A10EE0079B500 /* LaunchScreen.storyboard */,
 				C4AA00FB274A10EE0079B500 /* Info.plist */,
@@ -163,15 +238,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		C4C9335B274A274A0085A4A2 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				C4C9335C274A274A0085A4A2 /* Network */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		C4C9335C274A274A0085A4A2 /* Network */ = {
+		C4C9335C274A274A0085A4A2 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
 				C476C193274A31D8005CD9C2 /* NetworkModels */,
@@ -182,7 +249,7 @@
 				C4C93367274A274A0085A4A2 /* Constant.swift */,
 				C4C9335D274A274A0085A4A2 /* APIClient.swift */,
 			);
-			path = Network;
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4AA010B274A10EE0079B500 /* LoginViewController.xib in Resources */,
+				C431BFF6274A5300009FAD67 /* TopArtistViewController.xib in Resources */,
 				C4AA00FA274A10EE0079B500 /* LaunchScreen.storyboard in Resources */,
 				C4AA00F7274A10EE0079B500 /* Assets.xcassets in Resources */,
 			);
@@ -319,18 +387,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4C93369274A274A0085A4A2 /* Constant.swift in Sources */,
+				C431BFF5274A5300009FAD67 /* TopArtistModel.swift in Sources */,
 				C476C18B274A31D8005CD9C2 /* Header.swift in Sources */,
 				C4AA010C274A10EE0079B500 /* LoginViewController.swift in Sources */,
 				C4CF8D7126A03F4500468080 /* RequestBuilder.swift in Sources */,
 				C4AA0109274A10EE0079B500 /* LogInViewModel.swift in Sources */,
+				C431BFFB274A5300009FAD67 /* Router.swift in Sources */,
 				C4C93360274A274A0085A4A2 /* Request.swift in Sources */,
 				C4AA00EE274A10EE0079B500 /* AppDelegate.swift in Sources */,
 				C476C18D274A31D8005CD9C2 /* EndingPath.swift in Sources */,
 				C4C9335E274A274A0085A4A2 /* APIClient.swift in Sources */,
+				C431BFF4274A5300009FAD67 /* TopArtistViewModel.swift in Sources */,
+				C431BFF9274A5300009FAD67 /* TopArtistViewController.swift in Sources */,
 				C4C9336A274A274A0085A4A2 /* Model.swift in Sources */,
 				C476C18F274A31D8005CD9C2 /* Parameters.swift in Sources */,
+				C431BFFD274A5300009FAD67 /* Extension.swift in Sources */,
 				C476C191274A31D8005CD9C2 /* SpotifyBaseURL.swift in Sources */,
 				C476C195274A31D8005CD9C2 /* Tokens.swift in Sources */,
+				C431BFF8274A5300009FAD67 /* TableCell.swift in Sources */,
+				C431BFF7274A5300009FAD67 /* ArtistTableCell.swift in Sources */,
+				C4575B8B26A1B9910004FBD9 /* UserTopArtists.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
