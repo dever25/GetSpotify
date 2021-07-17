@@ -31,7 +31,7 @@ struct APIClient {
         }.resume()
     }
     
-    internal func getSpotifyAccessCodeURL() -> URL {
+    internal func getSpotifyAccessCodeURL() -> URL? {
         
         let paramDictionary = ["client_id": Constant.spotifyAPIClientID,
                                "redirect_uri": Constant.redirectURI,
@@ -46,7 +46,6 @@ struct APIClient {
         let stringQuery = mapToHTMLQuery.joined(separator: "&")
         let accessCodeBaseURL = "https://accounts.spotify.com/authorize"
         let fullURL = URL(string: accessCodeBaseURL.appending("?\(stringQuery)"))
-        print(fullURL)
-        return fullURL!
+        return fullURL
     }
 }

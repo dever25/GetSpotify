@@ -17,11 +17,10 @@ final class LogInViewModel: NSObject, LogInViewModelProtocol, ASWebAuthenticatio
     
     // MARK: - Get Spotify Access Code
     func logIn() {
-//        guard let urlRequest = client.getSpotifyAccessCodeURL() else {
-//            print("Error get urlRequest")
-//            return
-//        }
-        let urlRequest = client.getSpotifyAccessCodeURL()
+        guard let urlRequest = client.getSpotifyAccessCodeURL() else {
+            print("Error get urlRequest")
+            return
+        }
         
         let scheme = "auth"
         let session = ASWebAuthenticationSession(url: urlRequest, callbackURLScheme: scheme) { (callbackURL, error) in

@@ -17,6 +17,13 @@
 		C431BFFB274A5300009FAD67 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431BFFA274A5300009FAD67 /* Router.swift */; };
 		C431BFFD274A5300009FAD67 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C431BFFC274A5300009FAD67 /* Extension.swift */; };
 		C4575B8B26A1B9910004FBD9 /* UserTopArtists.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4575B8A26A1B9910004FBD9 /* UserTopArtists.swift */; };
+		C4575B8D26A1BC090004FBD9 /* ExpiredToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4575B8C26A1BC090004FBD9 /* ExpiredToken.swift */; };
+		C4575B8F26A1BC4B0004FBD9 /* SpotifyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4575B8E26A1BC4B0004FBD9 /* SpotifyType.swift */; };
+		C4575B9126A1BC570004FBD9 /* SearchArtists.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4575B9026A1BC570004FBD9 /* SearchArtists.swift */; };
+		C4575B9326A1BC620004FBD9 /* Alumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4575B9226A1BC620004FBD9 /* Alumn.swift */; };
+		C4575B9526A1BC770004FBD9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4575B9426A1BC770004FBD9 /* UserModel.swift */; };
+		C4575B9726A1BC7F0004FBD9 /* ArtistTopTracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4575B9626A1BC7F0004FBD9 /* ArtistTopTracks.swift */; };
+		C4575B9926A1BC930004FBD9 /* SearchTracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4575B9826A1BC930004FBD9 /* SearchTracks.swift */; };
 		C476C18B274A31D8005CD9C2 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476C18A274A31D8005CD9C2 /* Header.swift */; };
 		C476C18D274A31D8005CD9C2 /* EndingPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476C18C274A31D8005CD9C2 /* EndingPath.swift */; };
 		C476C18F274A31D8005CD9C2 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C476C18E274A31D8005CD9C2 /* Parameters.swift */; };
@@ -48,6 +55,13 @@
 		C431BFFA274A5300009FAD67 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C431BFFC274A5300009FAD67 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		C4575B8A26A1B9910004FBD9 /* UserTopArtists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTopArtists.swift; sourceTree = "<group>"; };
+		C4575B8C26A1BC090004FBD9 /* ExpiredToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpiredToken.swift; sourceTree = "<group>"; };
+		C4575B8E26A1BC4B0004FBD9 /* SpotifyType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyType.swift; sourceTree = "<group>"; };
+		C4575B9026A1BC570004FBD9 /* SearchArtists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchArtists.swift; sourceTree = "<group>"; };
+		C4575B9226A1BC620004FBD9 /* Alumn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alumn.swift; sourceTree = "<group>"; };
+		C4575B9426A1BC770004FBD9 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C4575B9626A1BC7F0004FBD9 /* ArtistTopTracks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistTopTracks.swift; sourceTree = "<group>"; };
+		C4575B9826A1BC930004FBD9 /* SearchTracks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTracks.swift; sourceTree = "<group>"; };
 		C476C18A274A31D8005CD9C2 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		C476C18C274A31D8005CD9C2 /* EndingPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndingPath.swift; sourceTree = "<group>"; };
 		C476C18E274A31D8005CD9C2 /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
@@ -165,8 +179,15 @@
 		C476C193274A31D8005CD9C2 /* NetworkModels */ = {
 			isa = PBXGroup;
 			children = (
+				C4575B8E26A1BC4B0004FBD9 /* SpotifyType.swift */,
+				C4575B9026A1BC570004FBD9 /* SearchArtists.swift */,
+				C4575B9226A1BC620004FBD9 /* Alumn.swift */,
+				C4575B8C26A1BC090004FBD9 /* ExpiredToken.swift */,
 				C4575B8A26A1B9910004FBD9 /* UserTopArtists.swift */,
+				C4575B9426A1BC770004FBD9 /* UserModel.swift */,
 				C476C194274A31D8005CD9C2 /* Tokens.swift */,
+				C4575B9626A1BC7F0004FBD9 /* ArtistTopTracks.swift */,
+				C4575B9826A1BC930004FBD9 /* SearchTracks.swift */,
 			);
 			path = NetworkModels;
 			sourceTree = "<group>";
@@ -393,19 +414,26 @@
 				C4CF8D7126A03F4500468080 /* RequestBuilder.swift in Sources */,
 				C4AA0109274A10EE0079B500 /* LogInViewModel.swift in Sources */,
 				C431BFFB274A5300009FAD67 /* Router.swift in Sources */,
+				C4575B9926A1BC930004FBD9 /* SearchTracks.swift in Sources */,
+				C4575B8F26A1BC4B0004FBD9 /* SpotifyType.swift in Sources */,
 				C4C93360274A274A0085A4A2 /* Request.swift in Sources */,
 				C4AA00EE274A10EE0079B500 /* AppDelegate.swift in Sources */,
 				C476C18D274A31D8005CD9C2 /* EndingPath.swift in Sources */,
 				C4C9335E274A274A0085A4A2 /* APIClient.swift in Sources */,
 				C431BFF4274A5300009FAD67 /* TopArtistViewModel.swift in Sources */,
 				C431BFF9274A5300009FAD67 /* TopArtistViewController.swift in Sources */,
+				C4575B9126A1BC570004FBD9 /* SearchArtists.swift in Sources */,
+				C4575B9326A1BC620004FBD9 /* Alumn.swift in Sources */,
 				C4C9336A274A274A0085A4A2 /* Model.swift in Sources */,
 				C476C18F274A31D8005CD9C2 /* Parameters.swift in Sources */,
+				C4575B9526A1BC770004FBD9 /* UserModel.swift in Sources */,
 				C431BFFD274A5300009FAD67 /* Extension.swift in Sources */,
 				C476C191274A31D8005CD9C2 /* SpotifyBaseURL.swift in Sources */,
 				C476C195274A31D8005CD9C2 /* Tokens.swift in Sources */,
 				C431BFF8274A5300009FAD67 /* TableCell.swift in Sources */,
+				C4575B8D26A1BC090004FBD9 /* ExpiredToken.swift in Sources */,
 				C431BFF7274A5300009FAD67 /* ArtistTableCell.swift in Sources */,
+				C4575B9726A1BC7F0004FBD9 /* ArtistTopTracks.swift in Sources */,
 				C4575B8B26A1B9910004FBD9 /* UserTopArtists.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

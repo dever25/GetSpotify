@@ -21,4 +21,3 @@ struct ArtistImage: Model {
     let height: Int
     let url: URL
 }
-
