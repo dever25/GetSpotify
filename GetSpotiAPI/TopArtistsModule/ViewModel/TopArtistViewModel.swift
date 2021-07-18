@@ -22,6 +22,6 @@ class TopArtistViewModel: TopArtistViewModelProtocol {
     }
     
     func tabOnArtist(index: Int) {
-        
+        Router.shared.presentArtistTopTracksVC(artist: artists.items[index])
     }
 }

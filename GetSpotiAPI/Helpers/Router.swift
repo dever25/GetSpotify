@@ -27,6 +27,18 @@ class Router {
         topVC.present(myTopArtistVC, animated: true)
     }
     
+    func presentArtistTopTracksVC(artist: ArtistItem) {
+        let tracksArtistVC = ArtistTopTracksVC(nibName: "ArtistTopTracksVC", bundle: nil)
+        tracksArtistVC.modalPresentationStyle = .fullScreen
+        let viewModel = ArtistTopTracksViewModel(artist: artist)
+        tracksArtistVC.viewModel = viewModel
+        
+        guard let topVC = UIWindow.getTopViewController() else {
+            return
+        }
+        topVC.present(tracksArtistVC, animated: true)
+    }
+    
     func back() {
         guard let topVC = UIWindow.getTopViewController() else {
             return
