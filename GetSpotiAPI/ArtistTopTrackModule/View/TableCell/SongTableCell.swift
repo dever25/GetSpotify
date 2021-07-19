@@ -32,7 +32,41 @@ class SongTableCell: TableCell {
     
     @objc
     func playButtonTapped() {
-        //TODO: сделать проигрывание
+        var currentPlayingId = UserDefaults.standard.string(forKey: "current_playing_id")
+        
+        guard let player = AudioPlayer.shared.player else {
+            // play the new audio beacuse non currently exists
+            if let previewURL = simplifiedTrack.previewUrl {
+                AudioPlayer.shared.downloadFileFromURL(url: previewURL)
+            }
+            currentPlayingId = simplifiedTrack.id
+            UserDefaults.standard.set(currentPlayingId, forKey: "current_playing_id")
+            
+            DispatchQueue.main.async {
+                self.setPause()
+            }
+            return
+        }
+        
+        // check to see if audio is playing and user taps on the same row
+        if currentPlayingId == simplifiedTrack.id && player.isPlaying {
+            player.pause()
+            setPlay()
+            // if audio not playing and user taps on the same row; to resume
+        } else if currentPlayingId == simplifiedTrack.id && !player.isPlaying {
+            player.play()
+            setPause()
+        } else {
+            if let previewURL = simplifiedTrack.previewUrl {
+                AudioPlayer.shared.downloadFileFromURL(url: previewURL)
+            }
+            currentPlayingId = simplifiedTrack.id
+            UserDefaults.standard.set(currentPlayingId, forKey: "current_playing_id")
+            // update the player image
+            DispatchQueue.main.async {
+                self.setPause()
+            }
+        }
     }
     
     internal func setTrack(song: SimpleTrack) {
@@ -45,6 +79,17 @@ class SongTableCell: TableCell {
         } else {
             hiddenPlayButton.isHidden = false
             playbackImage.isHidden = false
+        }
+        
+        let currentPlayingId = UserDefaults.standard.string(forKey: "current_playing_id")
+        
+        // update appropriate play/pause icon
+        if let player = AudioPlayer.shared.player,
+           player.isPlaying,
+           currentPlayingId == song.id {
+            setPause()
+        } else {
+            setPlay()
         }
         
         for image in song.images {

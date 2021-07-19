@@ -24,6 +24,7 @@ class ArtistTopTracksViewModel: ArtistTopTracksViewModelProtocol {
     
     func back() {
         Router.shared.back()
+        AudioPlayer.shared.stop()
     }
     
     func fetchArtistTopTracks(completion: @escaping () -> Void) {
