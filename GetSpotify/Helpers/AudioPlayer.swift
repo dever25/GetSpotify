@@ -5,8 +5,8 @@
 //  Created by Дмитрий Рудаков on 19.07.2021.
 //
 
-import Foundation
 import AVFoundation
+import Foundation
 
 class AudioPlayer {
     

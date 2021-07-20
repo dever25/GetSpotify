@@ -20,7 +20,12 @@ enum Header {
             ]
         case .POSTHeader:
             // Spotify's required format for authorization
-            let spotifyAPIAuthKey = "Basic \((Constant.spotifyAPIClientID + ":" + Constant.spotifyAPISecretKey).data(using: .utf8)!.base64EncodedString())"
+            guard let dataUTF8 = (Constant.spotifyAPIClientID + ":"
+                                  + Constant.spotifyAPISecretKey).data(using: .utf8) else {
+                print("Error: don't get buildHeader")
+                return [:]
+            }
+            let spotifyAPIAuthKey = "Basic \(dataUTF8.base64EncodedString())"
             return ["Authorization": spotifyAPIAuthKey,
                     "Content-Type": "application/x-www-form-urlencoded"]
         }

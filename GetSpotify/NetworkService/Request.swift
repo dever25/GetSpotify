@@ -54,11 +54,12 @@ extension Request {
         
         guard let refreshToken = UserDefaults.standard.string(forKey: "refresh_token") else { return nil }
         
+        let parameters = Parameters.buildParameters(.refreshTokenForAccessCode(refreshToken: refreshToken))()
         return Request.buildRequest(method: .post,
                                     header: Header.POSTHeader.buildHeader(),
                                     baseURL: SpotifyBaseURL.authBaseURL.rawValue,
                                     path: EndingPath.token.buildPath(),
-                                    params: Parameters.buildParameters(.refreshTokenForAccessCode(refreshToken: refreshToken))()) { result in
+                                    params: parameters) { result in
                                         // makeing decoding call
                                         result.decoding(Tokens.self, completion: completion)
         }
@@ -166,7 +167,7 @@ extension Request {
     
 }
 
-public extension Result where Success == Data, Failure == Error {
+extension Result where Success == Data, Failure == Error {
     
     func decoding<M: Model>(_ model: M.Type,
                             completion: @escaping (Result<M, Error>) -> Void) {

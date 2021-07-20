@@ -18,20 +18,22 @@ protocol RequestBuilder {
     var path: String { get }
     var params: [String: Any]? { get }
     
-    func toURLRequest() -> URLRequest
+    func toURLRequest() -> URLRequest?
 }
 
 extension RequestBuilder {
     
-    func toURLRequest() -> URLRequest {
+    func toURLRequest() -> URLRequest? {
         
-        let fullURL = URL(string: baseURL + path)
-        var request = URLRequest(url: fullURL!)
+        guard let fullURL = URL(string: baseURL + path) else {
+            return nil
+        }
+        var request = URLRequest(url: fullURL)
         request.allHTTPHeaderFields = headers
         request.httpMethod = method.rawValue.uppercased()
         
         if let params = params,
-           var components = URLComponents(url: fullURL!, resolvingAgainstBaseURL: false) {
+           var components = URLComponents(url: fullURL, resolvingAgainstBaseURL: false) {
             components.queryItems = [URLQueryItem]()
             
             for (key, value) in params {

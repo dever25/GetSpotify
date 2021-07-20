@@ -9,6 +9,7 @@ import AuthenticationServices
 import Foundation
 
 final class LogInViewModel: NSObject, LogInViewModelProtocol, ASWebAuthenticationPresentationContextProviding {
+    
     func presentationAnchor(for session: ASWebAuthenticationSession) -> ASPresentationAnchor {
         return ASPresentationAnchor()
     }

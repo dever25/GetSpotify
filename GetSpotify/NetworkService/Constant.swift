@@ -9,9 +9,9 @@ import Foundation
 
 // TODO: - зашифровать
 struct Constant {
-    static let spotifyAPIClientID = "bd84a59ee78048e69047b55b208d6808"
-    static let spotifyAPISecretKey = "c7796fda88ee47e6b3ccadb9ed2c6758"
-    static let redirectURI = "GetSpotiAPI://callback"
+    static let spotifyAPIClientID = "1f56f3180c6945ef892f4f5f05d36f6a"
+    static let spotifyAPISecretKey = "b110d2e6c49b4cc38b01ce68021801d0"
+    static let redirectURI = "GetSpotify://callback"
     static let scope = ["user-read-email", "user-top-read"]
     static let responseType = "code"
 }

@@ -7,12 +7,12 @@
 
 import Foundation
 
-public protocol Model: Codable {
+protocol Model: Codable {
     static var decoder: JSONDecoder { get }
     static var encoder: JSONEncoder { get }
 }
 
-public extension Model {
+extension Model {
     static var decoder: JSONDecoder {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

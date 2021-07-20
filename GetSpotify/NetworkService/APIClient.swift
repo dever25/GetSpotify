@@ -15,7 +15,10 @@ struct APIClient {
     }
     
     func call(request: Request) {
-        let urlRequest = request.builder.toURLRequest()
+        guard let urlRequest = request.builder.toURLRequest() else {
+            print("Error: missing urlRequest")
+            return
+        }
         session.dataTask(with: urlRequest) { (data, _, error) in
             let result: Result<Data, Error>
             

@@ -42,7 +42,7 @@ class ArtistTopTracksViewModel: ArtistTopTracksViewModelProtocol {
                                                id: track.id,
                                                title: track.name,
                                                previewURL: track.previewUrl,
-                                               images: track.album.images!)
+                                               images: track.album.images ?? [ArtistImage]())
                     self.simplifiedTracks.append(newTrack)
                 }
                 completion()

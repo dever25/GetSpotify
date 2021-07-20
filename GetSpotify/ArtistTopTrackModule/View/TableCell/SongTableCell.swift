@@ -5,8 +5,8 @@
 //  Created by Дмитрий Рудаков on 18.07.2021.
 //
 
-import UIKit
 import Kingfisher
+import UIKit
 
 class SongTableCell: TableCell {
     
