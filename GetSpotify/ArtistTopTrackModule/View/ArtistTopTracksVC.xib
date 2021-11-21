@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArtistTopTracksVC" customModule="GetSpotify" customModuleProvider="target">
+            <connections>
+                <outlet property="songsTableView" destination="a98-xV-Huo" id="sfA-TP-ZAD"/>
+                <outlet property="titleLabel" destination="hd4-R0-N68" id="Qex-wl-9yR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aI1-pt-Zje">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7er-jt-nSO">
+                            <rect key="frame" x="20" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="7er-jt-nSO" secondAttribute="height" multiplier="1:1" id="Yp8-dL-REs"/>
+                            </constraints>
+                            <color key="tintColor" red="0.95132736929999995" green="0.54841643809999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="chevron.backward" catalog="system"/>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="Txl-Pa-HJB"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hd4-R0-N68">
+                            <rect key="frame" x="184" y="11" width="46" height="22.5"/>
+                            <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="4CO-WG-PZs"/>
+                        <constraint firstItem="hd4-R0-N68" firstAttribute="centerY" secondItem="aI1-pt-Zje" secondAttribute="centerY" id="ERk-Aq-yWE"/>
+                        <constraint firstItem="hd4-R0-N68" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7er-jt-nSO" secondAttribute="trailing" constant="20" id="GaF-4h-l0g"/>
+                        <constraint firstItem="7er-jt-nSO" firstAttribute="leading" secondItem="aI1-pt-Zje" secondAttribute="leading" constant="20" id="LQ7-Mb-boR"/>
+                        <constraint firstItem="hd4-R0-N68" firstAttribute="centerX" secondItem="aI1-pt-Zje" secondAttribute="centerX" id="PaA-2F-X7q"/>
+                        <constraint firstItem="7er-jt-nSO" firstAttribute="top" secondItem="aI1-pt-Zje" secondAttribute="top" id="hbM-z0-9OH"/>
+                        <constraint firstAttribute="bottom" secondItem="7er-jt-nSO" secondAttribute="bottom" id="y2m-ol-jgS"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a98-xV-Huo">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.95132736929999995" green="0.83560471300000005" blue="0.70807203990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="a98-xV-Huo" secondAttribute="bottom" id="0Sq-L2-DBF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a98-xV-Huo" secondAttribute="trailing" id="IMn-7q-eMw"/>
+                <constraint firstItem="a98-xV-Huo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PFF-Bp-LEf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aI1-pt-Zje" secondAttribute="trailing" id="R5Y-mf-BGo"/>
+                <constraint firstItem="aI1-pt-Zje" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="oHj-R8-8NY"/>
+                <constraint firstItem="a98-xV-Huo" firstAttribute="top" secondItem="aI1-pt-Zje" secondAttribute="bottom" id="rRO-Dp-noi"/>
+                <constraint firstItem="aI1-pt-Zje" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xQ6-48-X5E"/>
+            </constraints>
+            <point key="canvasLocation" x="65" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+    </resources>
+</document>
